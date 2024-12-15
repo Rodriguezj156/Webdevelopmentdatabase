@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commments Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Comments Page</h1>
+    </header>
+
+    <section id="comment-form">
+      <h2>Leave a Comment</h2>
+      <form action="#" method="post">
+        <label for "name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="title">Comment Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="comment">Your Comment:</label><br>
+        <textarea id="comment" name="comment" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit Comment</button>
+      </form>
+    </section>
+
+    <section id="comments-section">
+      <h2>Recent Comments</h2>
+      <div class="comment">
+        <h3>Amazing Content!</h3>
+        <p><strong>December 15, 2024</strong></p>
+        <hr>
+      </div>
+
+      <div class="comment">
+        <h3>Great Work!</h3>
+        <p><strong>December 15, 2024</strong></p>
+        <hr>
+      </div>
+    </section>
+  </body>
+</html>
