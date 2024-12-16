@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Handler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Comment</h1>
+    </header>
+
+    <section id="response">
+        <p>Your comment has been submitted successfully. Below is the information you provided:</p>
+        <div class="submitted-data">
+            <h3>Submitted Details</h3>
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Title:</strong> <span id="title"></span></p>
+            <p><strong>Comment:</strong></p>
+            <p id="comment"></p>
+        </div>
+        <p><a href="comments.html">Go Back to Comments Section</a></p>
+    </section>
+
+    <script>
+        // Mockup for displaying form data
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const title = urlParams.get('title');
+        const comment = urlParams.get('comment');
+
+        document.getElementById('name').textContent = name || "Not Provided";
+        document.getElementById('title').textContent = title || "Not Provided";
+        document.getElementById('comment').textContent = comment || "No Comment Provided";
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Aspire Electronics. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
