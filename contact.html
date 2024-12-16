@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us- Aspire E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Please fill out the form below, and our team will get back to you as soons as possible.</p>
+    </header>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-form section">
+      <h2>Get in Touch</h2>
+      <form action="contact.handler.html" method="get" class="contact-form">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." 
+          rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="additional-contact-info">
+      <h2>Other Ways to Reach Us</h2>
+      <p><strong>Email:</strong>support@aspirecommerce.com</p>
+      <p><strong>Phone:</strong>+1 (800) 555-1234</p>
+      <p><strong>Address:</strong>123 Aspire Way, Innovation City, USA</p>
+      <div class="social media">
+        <h3>Follow US</h3>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </section>
+
+    <footer>
+     <p> 2024 Aspire E-Commerce. All Rights Reserved. Last Modified: December 15, 2024</p>
+        <div class="validation-icons">
+        <a href="https://validator.w3.org/check?uri=referer">
+                <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+    </footer>
+
+    <script>
+      document.getElementByID("last-modified").textContent=document.lastModified;
+    </script>
+  </body>
+</html>
